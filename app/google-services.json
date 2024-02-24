@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "59739086524",
+    "project_id": "utility-chimera-393811",
+    "storage_bucket": "utility-chimera-393811.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:59739086524:android:6825d364b3d601b4613ab9",
+        "android_client_info": {
+          "package_name": "com.example.pawrescue"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBMkQzSCeTHBs4unJvy1WIcZSM06BKYshE"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

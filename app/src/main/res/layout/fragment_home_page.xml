@@ -1,0 +1,107 @@
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp">
+
+    <EditText
+        android:id="@+id/edit_situation"
+        android:layout_width="0dp"
+        android:layout_height="48dp"
+        android:layout_marginTop="8dp"
+        android:background="@drawable/rounded_border"
+        android:hint="Situation"
+        android:padding="8dp"
+        android:textColor="@color/colorAccent"
+        android:textColorHint="@color/colorAccent"
+        android:drawablePadding="10dp"
+        app:layout_constraintTop_toBottomOf="@id/edit_pet_name"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
+        android:id="@+id/btn_upload_photo"
+        android:layout_width="239dp"
+        android:layout_height="195dp"
+        android:layout_marginBottom="44dp"
+        android:background="@drawable/add3"
+        android:textColor="@android:color/white"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toTopOf="@+id/edit_pet_name"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <EditText
+        android:id="@+id/edit_location"
+        android:layout_width="0dp"
+        android:layout_height="48dp"
+        android:layout_marginTop="8dp"
+        android:background="@drawable/rounded_border"
+        android:hint="Location"
+        android:padding="8dp"
+        android:textColor="@color/colorAccent"
+        android:textColorHint="@color/colorAccent"
+    android:drawablePadding="10dp"
+    app:layout_constraintTop_toBottomOf="@id/edit_situation"
+    app:layout_constraintEnd_toEndOf="parent"
+    app:layout_constraintStart_toStartOf="parent" />
+
+    <EditText
+        android:id="@+id/edit_pet_name"
+        android:layout_width="0dp"
+        android:layout_height="48dp"
+        android:layout_marginTop="420dp"
+        android:background="@drawable/rounded_border"
+    android:drawablePadding="10dp"
+    android:hint="Pet Name"
+    android:padding="8dp"
+    android:textColor="@color/colorAccent"
+        android:textColorHint="@color/colorAccent"
+    app:layout_constraintEnd_toEndOf="parent"
+    app:layout_constraintStart_toStartOf="parent"
+    app:layout_constraintTop_toTopOf="parent" />
+
+
+    <Button
+        android:id="@+id/btn_save"
+        android:layout_width="220dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="76dp"
+        android:background="@drawable/blue_button"
+        android:text="Save"
+        android:textColor="@android:color/white"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.916"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/edit_situation" />
+
+    <!-- Harunun ekledigi buton  -->
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="32dp"
+        android:layout_marginEnd="32dp"
+        android:text="Paw Rescue"
+        android:textColor="@color/colorAccent"
+        android:textColorHint="@color/colorAccent"
+        android:textSize="25sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:layout_editor_absoluteY="38dp" />
+
+    <Button
+        android:id="@+id/btnEmergencyHotlines"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:background="@drawable/alarm"
+
+        tools:layout_editor_absoluteX="300dp"
+        tools:layout_editor_absoluteY="10dp" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

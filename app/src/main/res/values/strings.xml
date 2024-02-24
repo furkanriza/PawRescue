@@ -1,0 +1,18 @@
+<resources>
+    <string name="app_name">PawRescue</string>
+    <string name="log_in">Log in</string>
+    <string name="password">Password</string>
+    <string name="email">Email</string>
+    <string name="hello_blank_fragment">Hello</string>
+    <string name="or">OR CONNECT WITH</string>
+    <string name="sign_in">Sign In</string>
+    <string name="register">Sign Up</string>
+    <string name="home">HomePage</string>
+    <string name="animal_list">ListCuties</string>
+    <string name="pet_profile">ProfileCuties</string>
+    <string name="donation">DonationPage</string>
+    <string name="facebook_app_id">526498191468722</string>
+    <string name="fb_login_protocol_scheme">fb526498191468722</string>
+    <string name="posted_by">Posted by: %1$s %2$s</string>
+    <string name="ranking">Ranking</string>
+</resources>

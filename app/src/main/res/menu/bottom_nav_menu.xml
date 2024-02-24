@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/nav_home"
+        android:icon="@drawable/ic_home"
+        android:title="@string/home" />
+    <item
+        android:id="@+id/nav_animal_list"
+        android:icon="@drawable/ic_animal_list"
+        android:title="@string/animal_list" />
+    <item
+        android:id="@+id/nav_donation"
+        android:icon="@drawable/ic_donation"
+        android:title="@string/donation" />
+    <item
+        android:id="@+id/nav_rank_page"
+        android:icon="@drawable/ranking"
+        android:title="@string/ranking" />
+</menu>

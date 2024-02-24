@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+    <!-- Permissions for external storage (Harun-->
+    <uses-feature
+        android:name="android.hardware.telephony"
+        android:required="false" />
+    <!-- Permissions for external storage -->
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+
+    <!-- If your app requires internet access -->
+    <uses-permission android:name="android.permission.INTERNET" />
+
+    <!-- Added BY Harun    -->
+    <uses-permission android:name="android.permission.CALL_PHONE"/>
+
+    <application
+        android:allowBackup="true"
+        android:dataExtractionRules="@xml/data_extraction_rules"
+        android:fullBackupContent="@xml/backup_rules"
+        android:icon="@drawable/pawprint2"
+        android:label="@string/app_name"
+        android:roundIcon="@drawable/pawprint2"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.AppCompat.Light"
+        tools:targetApi="31">
+        <activity
+            android:name=".Activity2"
+            android:exported="false" />
+        <activity
+            android:name=".Authentication.MainActivity"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <!-- Added By Harun-->
+        <activity android:name=".emergency.EmergencyHotlineActivity"
+            android:theme="@style/Theme.AppCompat.Light.DarkActionBar">
+            <!-- You can add additional attributes here if needed -->
+        </activity>
+
+        <provider
+            android:name="com.example.pawrescue.UserContentProvider.UserContentProvider"
+            android:authorities="com.example.pawrescue.userprovider"
+            android:exported="false" />
+
+    </application>
+
+
+</manifest>

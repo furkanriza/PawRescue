@@ -1,0 +1,84 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp">
+
+    <!-- Title for the donation page -->
+    <TextView
+        android:id="@+id/tvTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Donations"
+        android:textSize="24sp"
+        android:textColor="@color/colorAccent"
+        android:layout_centerHorizontal="true"/>
+
+    <!-- Column Titles -->
+    <LinearLayout
+        android:id="@+id/llColumnTitles"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_below="@id/tvTitle"
+        android:layout_marginTop="8dp">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Date"
+            android:textColor="@color/colorAccent"
+            android:gravity="center"/>
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Donor"
+            android:textColor="@color/colorAccent"
+            android:gravity="center"/>
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Amount"
+            android:textColor="@color/colorAccent"
+            android:gravity="center"/>
+    </LinearLayout>
+
+    <!-- List to display donations -->
+    <ListView
+        android:id="@+id/lvDonations"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_below="@id/llColumnTitles"
+        android:layout_above="@+id/etDonationAmount"
+        android:divider="#DDD"
+        android:layout_marginTop="10dp"
+        android:dividerHeight="1dp"/>
+
+    <!-- EditText for donation amount input -->
+    <EditText
+        android:id="@+id/etDonationAmount"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Enter donation amount"
+        android:textColor="@color/colorAccent"
+
+        android:inputType="numberDecimal"
+        android:layout_marginBottom="16dp"
+        android:layout_above="@+id/btnDonate" />
+
+    <!-- Donate button -->
+    <Button
+        android:id="@+id/btnDonate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Donate"
+        android:textColorHint="@color/colorAccent"
+        android:layout_centerHorizontal="true"
+        android:layout_alignParentBottom="true"
+        android:textColor="#FFF"/>
+
+</RelativeLayout>
